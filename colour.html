@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="h1">Color</h1>
+    <button onclick="Color()">Color Change</button>
+    <script>
+            let h1=document.getElementById("h1");
+            function Color()
+            {
+               if(document.body.style.backgroundColor=='blue'||document.body.style.backgroundColor=='white')
+               {
+                document.body.style.backgroundColor="red"
+                h1.style.color="green";
+                h1.innerText="RED";
+                
+               }
+               else if(document.body.style.backgroundColor=='red')
+
+               {
+                document.body.style.backgroundColor="green";
+                h1.style.color="blue";
+                h1.innerText="GREEN";
+               }
+               else if(document.body.style.backgroundColor=="green")
+               {
+                document.body.style.backgroundColor="blue";
+                h1.style.color="red";
+                h1.innerText="BLUE";
+               }
+               else{
+                document.body.style.backgroundColor="white";
+               }
+            }
+    </script>
+</body>
+</html>
